@@ -1,4 +1,8 @@
-The material is used to outline one model. There is just one shader, I will detail those parments:
+The material is used to outline one model. 
+
+Support: Unity 5.6.0+
+
+There is just one shader, I will detail those parments:
 
 Outline Color : Outline's color
 
