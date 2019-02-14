@@ -1,5 +1,4 @@
-﻿Shader "ModelEffect/VerticsOutline"
-{
+﻿Shader "ModelEffect/Version1_VerticsOutline_Normal" {
 	Properties {
 		_MainTex("Base (RGB)", 2D) = "white" {}
 		_OutlineFactor("Outline Factor", Range(0, 1)) = 0.5
@@ -39,12 +38,12 @@
 			}
 
 			CGPROGRAM
-	#pragma vertex vert
-	#pragma fragment frag
-	#pragma target 2.0
-	#pragma multi_compile_fog
+			#pragma vertex vert
+			#pragma fragment frag
+			#pragma target 3.5
+			#pragma multi_compile_fog
 
-	#include "UnityCG.cginc"
+			#include "UnityCG.cginc"
 
 			struct appdata_t {
 				float4 vertex : POSITION;
@@ -93,7 +92,7 @@
 
 			Cull Off
 			ZWrite On
-			ZTest Always
+			//ZTest Always
 			ColorMask RGBA
 			
 			Stencil {
@@ -108,7 +107,7 @@
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag
-			#pragma target 2.0
+			#pragma target 3.5
 			#pragma multi_compile_fog
 
 			#include "UnityCG.cginc"
@@ -168,7 +167,7 @@
 
 			Cull Off
 			ZWrite On
-			ZTest Always
+			//ZTest Always
 			Blend SrcAlpha OneMinusSrcAlpha
 
 			Stencil {
@@ -181,12 +180,12 @@
 			}
 
 			CGPROGRAM
-	#pragma vertex vert
-	#pragma fragment frag
-	#pragma target 2.0
-	#pragma multi_compile_fog
+			#pragma vertex vert
+			#pragma fragment frag
+			#pragma target 3.5
+			#pragma multi_compile_fog
 
-	#include "UnityCG.cginc"
+			#include "UnityCG.cginc"
 
 			struct appdata_t {
 				float4 vertex : POSITION;
@@ -256,12 +255,12 @@
 			}
 
 			CGPROGRAM
-	#pragma vertex vert
-	#pragma fragment frag
-	#pragma target 2.0
-	#pragma multi_compile_fog
+			#pragma vertex vert
+			#pragma fragment frag
+			#pragma target 3.5
+			#pragma multi_compile_fog
 
-	#include "UnityCG.cginc"
+			#include "UnityCG.cginc"
 
 			struct appdata_t {
 				float4 vertex : POSITION;
@@ -273,7 +272,7 @@
 				float4 vertex : SV_POSITION;
 				float2 texcoord : TEXCOORD0;
 				UNITY_FOG_COORDS(1)
-					UNITY_VERTEX_OUTPUT_STEREO
+				UNITY_VERTEX_OUTPUT_STEREO
 			};
 
 			sampler2D _MainTex;
