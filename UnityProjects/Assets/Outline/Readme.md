@@ -1,5 +1,7 @@
 # About
-The material is used to render one model's outline. 
+The material is used to render one model's outline. screenshot of the effect:
+###
+![](ScreenShot1.png)
 
 ## Shader Parments
 Outline Color : Outline's color <br>
