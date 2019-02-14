@@ -10,7 +10,7 @@ Outline Width : Outline's width.<br>
 Body Alpha : The body's alpha value, used to controll body's alpha.
 
 # 说明
-该材质能绘制模型边框，同时保持模型的透明度，不是基于后处理深度图的描边
+该材质能绘制模型边框，同时保持模型的透明度，不是基于后处理深度图的描边。简述相关简述：https://www.jianshu.com/p/619ab1d67496
 
 ## Shader参数
 Outline Color : 描边的颜色<br>
